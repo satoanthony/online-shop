@@ -1,0 +1,84 @@
+:root {
+  /*------------------------------Colors------------------------------*/
+  --main-color: #f04d27;
+  --main-sec-color: #f2913a;
+  --main-dk-color: #201f25;
+  --main-wh-color: #f0f0f8;
+}
+
+/*------------------------------ALL------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /*------------------------------Fonts------------------------------*/
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Slab", serif;
+  font-family: "Yeseva One", serif;
+}
+
+/*------------------------------Corpo------------------------------*/
+body {
+  min-height: 100vh;
+  background-color: var(--main-wh-color);
+}
+/*------------------------------Menu de Navegação------------------------------*/
+.top-banner {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.top-banner a {
+  margin-left: 1rem;
+}
+
+.top-banner p {
+  color: var(--main-wh-color);
+  margin-left: 20rem;
+}
+
+i {
+  font-size: 1.3em;
+  color: var(--main-wh-color);
+  word-spacing: 2rem;
+}
+
+.top-banner-r {
+  background-color: var(--main-color);
+  margin-right: 0rem;
+}
+
+.top-banner-r a {
+  margin-right: 2rem;
+}
+
+/*------------------------------Menu de Navegação------------------------------*/
+header {
+  background-color: var(--main-dk-color);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--main-wh-color);
+  background-color: var(--main-dk-color);
+  font-weight: 200;
+  margin-left: 2rem;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: var(--main-wh-color);
+  background-color: var(--main-dk-color);
+  font-weight: 500;
+  margin-left: 10rem;
+}
