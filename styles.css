@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  
   /*------------------------------Fonts------------------------------*/
   font-family: "Josefin Sans", sans-serif;
   font-family: "Josefin Slab", serif;
@@ -22,6 +22,10 @@
 body {
   min-height: 100vh;
   background-color: var(--main-wh-color);
+}
+/*------------------------------Section------------------------------*/
+section {
+    min-height: 90vh;
 }
 /*------------------------------Menu de Navegação------------------------------*/
 .top-banner {
@@ -57,7 +61,7 @@ i {
 
 /*------------------------------Menu de Navegação------------------------------*/
 header {
-  background-color: var(--main-dk-color);
+  background: var(--main-dk-color);
   position: fixed;
   left: 0;
   width: 100%;
@@ -70,7 +74,6 @@ header {
 .logo {
   font-size: 1.8rem;
   color: var(--main-wh-color);
-  background-color: var(--main-dk-color);
   font-weight: 200;
   margin-left: 2rem;
 }
@@ -78,7 +81,21 @@ header {
 .navbar a {
   font-size: 1.2rem;
   color: var(--main-wh-color);
-  background-color: var(--main-dk-color);
   font-weight: 500;
   margin-left: 10rem;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 1rem;
+  background: var(--main-color);
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
 }
