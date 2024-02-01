@@ -3,7 +3,7 @@
   --main-color: #f04d27;
   --main-sec-color: #f2913a;
   --main-dk-color: #201f25;
-  --main-wh-color: #f0f0f8;
+  --main-wh-color: #fefeff;
 }
 
 /*------------------------------ALL------------------------------*/
@@ -21,18 +21,18 @@
 /*------------------------------Corpo------------------------------*/
 body {
   min-height: 100vh;
-  background-color: var(--main-wh-color);
+  background-color: var(--main-dk-color);
 }
 /*------------------------------Section------------------------------*/
 section {
   margin: auto;
   width: 100%;
-  min-height: 90vh;
+  height: 90vh;
   padding: 0;
   text-align: center;
   font-family: "Yeseva One", serif;
   border-style: solid;
-  border-width: 0.5rem 1rem;
+  border-width: 1rem;
   border-color: var(--main-color);
   background-color: var(--main-wh-color);
 }
@@ -107,4 +107,107 @@ header {
 
 .navbar a:hover::before {
   width: 100%;
+}
+
+/*------------------------------Hero Banner------------------------------*/
+.hero-banner {
+  margin-top: 2rem;
+  background-image: url(/assets/home/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  opacity: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.hero {
+  color: var(--main-wh-color);
+  z-index: 5;
+}
+
+.hero-banner img {
+  opacity: 100%;
+}
+
+.hero-banner h1 {
+  color: var(--main-wh-color);
+  font-family: "Josefin Sans", serif;
+  font-size: 8rem;
+}
+
+.hero-banner h3 {
+  color: var(--main-wh-color);
+  font-family: "Josefin Slab", serif;
+  font-size: 5rem;
+}
+
+.hero-banner button {
+  margin: auto;
+  margin-top: 2rem;
+  border-style: solid;
+  border-radius: 2rem;
+  border-color: var(--main-sec-color);
+  background-color: transparent;
+  border-radius: 8rem;
+  color: var(--main-sec-color);
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.hero-banner button:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  box-shadow: 0px 0px 5px 5px var(--main-color);
+}
+
+/*------------------------------Mini-Hero Banner------------------------------*/
+.img-card {
+  background-color: var(--main-dk-color);
+  object-fit: fill;
+  opacity: 30%;
+}
+
+.mini-banner {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-dk-color);
+}
+
+.mini-banner img {
+  object-fit: cover;
+  display: block;
+  width: 48vw;
+  height: 87vh;
+}
+
+.mini-banner button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 2rem;
+  border-color: var(--main-sec-color);
+  background-color: transparent;
+  border-radius: 8rem;
+  color: var(--main-sec-color);
+  font-size: 2rem;
+  padding: 2rem;
+  box-shadow: 0px 0px 5px 5px var(--main-color);
+  z-index: 3;
+}
+
+/*------------------------------Loja de acessórios------------------------------*/
+.product-conteiner {
+  justify-content: space-evenly;
+}
+.product-conteiner table {
+  margin-top: 4rem;
+}
+.product-conteiner img {
+  height: 16rem;
 }
