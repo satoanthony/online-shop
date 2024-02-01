@@ -202,12 +202,17 @@ header {
 }
 
 /*------------------------------Loja de acessórios------------------------------*/
-.product-conteiner {
-  justify-content: space-evenly;
-}
 .product-conteiner table {
-  margin-top: 4rem;
+  margin-top: 2rem;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 50px 20px;
 }
 .product-conteiner img {
   height: 16rem;
+}
+
+.product-conteiner td {
+  box-shadow: 2px 2px 2px 2px black;
+  border-radius: 40px;
 }
