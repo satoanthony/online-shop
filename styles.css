@@ -69,7 +69,6 @@ i {
 /*------------------------------Menu de Navegação------------------------------*/
 header {
   background: var(--main-wh-color);
-
   left: 0;
   width: 100%;
   display: inline-flex;
@@ -77,7 +76,7 @@ header {
   align-items: center;
   text-align: justify;
   z-index: 3;
-  height: 10vh;
+  transition: 0.2s;
 }
 
 .logo {
@@ -107,6 +106,17 @@ header {
 
 .navbar a:hover::before {
   width: 100%;
+}
+
+/*------------------------------Sticky effect------------------------------*/
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--main-dk-color);
+  padding: none;
+  font-size: 25px;
+  z-index: 4;
 }
 
 /*------------------------------Hero Banner------------------------------*/
