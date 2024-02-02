@@ -68,26 +68,28 @@ i {
 
 /*------------------------------Menu de Navegação------------------------------*/
 header {
-  background: var(--main-dk-color);
-  position: fixed;
+  background: var(--main-wh-color);
+
   left: 0;
   width: 100%;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  text-align: justify;
   z-index: 3;
+  height: 10vh;
 }
 
 .logo {
   font-size: 1.8rem;
-  color: var(--main-wh-color);
+  color: var(--main-dk-color);
   font-weight: 200;
   margin-left: 2rem;
 }
 
 .navbar a {
   font-size: 1.2rem;
-  color: var(--main-wh-color);
+  color: var(--main-dk-color);
   font-weight: 500;
   margin-left: 10rem;
 }
@@ -112,12 +114,13 @@ header {
   margin-top: 2rem;
   background-image: url(/assets/home/home-bg.jpg);
   background-repeat: no-repeat;
-  background-size: auto auto;
+  background-size: cover;
   opacity: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
+  height: 55vh;
 }
 
 .hero {
@@ -161,27 +164,33 @@ header {
 }
 
 /*------------------------------Mini-Hero Banner------------------------------*/
-.img-card {
-  background-color: var(--main-dk-color);
-  object-fit: fill;
-  opacity: 30%;
+.mini-hero {
+  height: 45vh;
 }
 
 .mini-banner {
-  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: var(--main-dk-color);
+  padding: 0;
+  height: 45vh;
 }
 
 .mini-banner img {
   object-fit: cover;
   display: block;
-  width: 48vw;
-  height: 87vh;
+  width: 49.44vw;
+  height: 45vh;
+  padding: 0;
+  margin: 0;
 }
 
+.img-card {
+  background-color: var(--main-dk-color);
+  object-fit: fill;
+  opacity: 30%;
+}
 .mini-banner a {
   position: absolute;
   display: flex;
