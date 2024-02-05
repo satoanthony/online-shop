@@ -401,5 +401,5 @@ ul {
 .social-foot i {
   color: var(--main-color);
   font-size: 2rem;
-  display: flex;
+  display: inline;
 }
