@@ -39,7 +39,7 @@ section {
   background-color: var(--main-color);
   display: flex;
   align-items: center;
-  margin-left: 1rem;
+  height: 3rem;
 }
 
 .top-banner a {
@@ -59,11 +59,7 @@ i {
 
 .top-banner-r {
   background-color: var(--main-color);
-  margin-right: 0rem;
-}
-
-.top-banner-r a {
-  margin-right: 2rem;
+  margin-left: 55rem;
 }
 
 /*------------------------------Menu de Navegação------------------------------*/
@@ -79,11 +75,8 @@ header {
   transition: 0.2s;
 }
 
-.logo {
-  font-size: 1.8rem;
-  color: var(--main-dk-color);
-  font-weight: 200;
-  margin-left: 2rem;
+.logo img {
+  height: 6rem;
 }
 
 .navbar a {
@@ -121,7 +114,6 @@ div.sticky {
 
 /*------------------------------Hero Banner------------------------------*/
 .hero-banner {
-  margin-top: 2rem;
   background-image: url(/assets/home/home-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,9 +146,7 @@ div.sticky {
   font-size: 5rem;
 }
 
-.hero-banner button {
-  margin: auto;
-  margin-top: 2rem;
+.hero-banner a {
   border-style: solid;
   border-radius: 2rem;
   border-color: var(--main-sec-color);
@@ -167,7 +157,7 @@ div.sticky {
   padding: 2rem;
 }
 
-.hero-banner button:hover {
+.hero-banner a:hover {
   color: var(--main-color);
   border-color: var(--main-color);
   box-shadow: 0px 0px 5px 5px var(--main-color);
@@ -176,6 +166,7 @@ div.sticky {
 /*------------------------------Mini-Hero Banner------------------------------*/
 .mini-hero {
   height: 45vh;
+  display: flex;
 }
 
 .mini-banner {
@@ -402,4 +393,61 @@ ul {
   color: var(--main-color);
   font-size: 2rem;
   display: inline;
+}
+
+/*---------------------------------------Drop Down Stylization--------------------------------------------*/
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
