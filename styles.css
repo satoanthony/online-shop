@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
   /*------------------------------Fonts------------------------------*/
   font-family: "Josefin Sans", sans-serif;
   font-family: "Josefin Slab", serif;
@@ -51,7 +52,6 @@ section {
   height: 90vh;
   padding: 0;
   text-align: center;
-  font-family: "Yeseva One", serif;
 
   background-color: var(--main-wh-color);
 }
@@ -61,6 +61,10 @@ section {
   display: flex;
   align-items: center;
   height: 3rem;
+}
+.social-banner {
+  display: inline-flex;
+  margin-left: -6rem;
 }
 
 .top-banner a {
@@ -80,16 +84,15 @@ i {
 
 .top-banner-r {
   background-color: var(--main-color);
-  margin-left: 55rem;
+  margin-left: 58rem;
 }
 
 /*------------------------------Menu de Navegação------------------------------*/
 header {
-  background: var(--main-wh-color);
+  background-color: var(--main-wh-color);
   left: 0;
   width: 100%;
   display: inline-flex;
-  justify-content: center;
   align-items: center;
   text-align: justify;
   z-index: 3;
@@ -98,13 +101,15 @@ header {
 
 .logo img {
   height: 6rem;
+  margin-left: 12rem;
 }
 
 .navbar a {
   font-size: 1.2rem;
   color: var(--main-dk-color);
+  background-color: var(--main-wh-color);
   font-weight: 500;
-  margin-left: 10rem;
+  padding-left: 10rem;
 }
 
 .navbar a::before {
@@ -124,6 +129,14 @@ header {
 
 .search {
   font-size: 12pt;
+}
+
+#sticky-nav {
+  font-size: 1rem;
+}
+
+#sticky-nav a {
+  margin-left: 13rem;
 }
 
 /*------------------------------Sticky effect------------------------------*/
@@ -310,6 +323,10 @@ div.sticky {
   height: 50vh;
 }
 
+.text {
+  margin-left: 10rem;
+}
+
 .text h2 {
   text-align: left;
   font-size: 2rem;
@@ -339,15 +356,19 @@ div.sticky {
   box-shadow: 0rem 0rem 0rem 0.1rem var(--main-wh-color);
 }
 
+.btn {
+  margin-top: -6%;
+}
+
 /*------------------------------Text Banner------------------------------*/
-footer {
+.footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .footer-conteiner {
-  max-width: 1170px;
+  max-width: 80vw;
   background-color: var(--main-wh-color);
   margin: auto;
 }
@@ -368,14 +389,14 @@ footer {
 
 .footer-col {
   width: 16%;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .footer-col h4 {
   font-size: 1.1rem;
   color: var(--main-dk-color);
   text-transform: capitalize;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   position: relative;
   background-color: var(--main-wh-color);
@@ -385,7 +406,7 @@ footer {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1.2rem;
+  bottom: -1rem;
   background-color: var(--main-color);
   height: 0.1rem;
   box-sizing: border-box;
@@ -393,7 +414,7 @@ footer {
 }
 
 .footer-col ul li::not(:last-child) {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0rem;
 }
 
 .footer-col ul li a {
@@ -401,19 +422,21 @@ footer {
   text-transform: capitalize;
   color: var(--main-dk-color);
   font-weight: 300;
-  display: block;
+  display: flex;
+  justify-content: left;
+
   transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
   color: var(--main-wh-color);
-  padding-left: 0.5rem;
+  padding-left: 0.8rem;
 }
 
 .footer-social i {
   color: var(--main-color);
   font-size: 2rem;
-  display: inline;
+  display: block;
 }
 
 /*---------------------------------------Drop Down Stylization--------------------------------------------*/
