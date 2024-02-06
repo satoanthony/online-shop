@@ -420,7 +420,7 @@ li a,
 
 li a:hover,
 .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: var(--main-color);
 }
 
 li.dropdown {
@@ -445,7 +445,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: var(--main-color);
 }
 
 .dropdown:hover .dropdown-content {
