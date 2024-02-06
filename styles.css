@@ -17,12 +17,30 @@
   font-family: "Josefin Slab", serif;
   font-family: "Yeseva One", serif;
 }
+/*------------------------------Hs------------------------------*/
+h1 {
+  font-family: "Josefin Slab", serif;
+  font-size: 72pt;
+}
+
+h2 {
+  font-size: 48pt;
+}
+
+h3 {
+  font-size: 36pt;
+}
+
+h4 {
+  font-size: 28pt;
+}
 
 /*------------------------------Corpo------------------------------*/
 body {
   min-height: 100vh;
   background-color: var(--main-dk-color);
 }
+
 /*------------------------------Section------------------------------*/
 section {
   margin: auto;
@@ -99,6 +117,10 @@ header {
 
 .navbar a:hover::before {
   width: 100%;
+}
+
+.search {
+  font-size: 12pt;
 }
 
 /*------------------------------Sticky effect------------------------------*/
