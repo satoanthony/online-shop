@@ -95,7 +95,7 @@ header {
   display: inline-flex;
   align-items: center;
   text-align: justify;
-  z-index: 3;
+  z-index: 4;
   transition: 0.2s;
 }
 
@@ -133,10 +133,41 @@ header {
 
 #sticky-nav {
   font-size: 1rem;
+  z-index: 2;
 }
 
 #sticky-nav a {
   margin-left: 13rem;
+}
+
+.sbox {
+  width: 50rem;
+  height: 2rem;
+  background-color: var(--main-wh-color);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.sbox i {
+  font-size: 1.7rem;
+  color: var(--main-dk-color);
+}
+
+.sbox button {
+  border: none;
+  outline: none;
+  margin: 1rem;
+}
+
+.sbox > input {
+  flex: 1;
+  height: 2rem;
+  width: 1rem;
+  outline: black;
+  font-size: 1.2rem;
+  padding-left: 1rem;
 }
 
 /*------------------------------Sticky effect------------------------------*/
@@ -166,6 +197,7 @@ div.sticky {
 .hero {
   color: var(--main-wh-color);
   z-index: 5;
+  padding-bottom: 6rem;
 }
 
 .hero-banner img {
@@ -182,6 +214,7 @@ div.sticky {
   color: var(--main-wh-color);
   font-family: "Josefin Slab", serif;
   font-size: 5rem;
+  font-weight: 300;
 }
 
 .hero-banner a {
@@ -193,12 +226,17 @@ div.sticky {
   color: var(--main-sec-color);
   font-size: 2rem;
   padding: 2rem;
+  font-family: "Josefin Sans", serif;
 }
 
 .hero-banner a:hover {
   color: var(--main-color);
   border-color: var(--main-color);
   box-shadow: 0px 0px 5px 5px var(--main-color);
+}
+
+.hero .btn {
+  margin-top: 6rem;
 }
 
 /*------------------------------Mini-Hero Banner------------------------------*/
@@ -213,14 +251,14 @@ div.sticky {
   justify-content: center;
   background-color: var(--main-dk-color);
   padding: 0;
-  height: 45vh;
+  height: 50vh;
 }
 
 .mini-banner img {
   object-fit: cover;
   display: block;
-  width: 49.44vw;
-  height: 45vh;
+  width: 50vw;
+  height: 50vh;
   padding: 0;
   margin: 0;
 }
@@ -252,6 +290,11 @@ div.sticky {
 }
 
 /*------------------------------Loja de acessórios------------------------------*/
+.title-section {
+  padding-top: 1rem;
+  background-color: var(--main-sec-color);
+}
+
 .product-conteiner {
   height: auto;
 }
@@ -287,6 +330,7 @@ div.sticky {
 .product-conteiner h2 {
   margin-top: 2rem;
   margin-bottom: 1.2rem;
+  font-size: 2rem;
 }
 
 .product-conteiner p {
@@ -436,7 +480,7 @@ div.sticky {
 .footer-social i {
   color: var(--main-color);
   font-size: 2rem;
-  display: block;
+  display: inline-block;
 }
 
 /*---------------------------------------Drop Down Stylization--------------------------------------------*/
