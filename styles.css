@@ -42,19 +42,19 @@ p {
 /*------------------------------Corpo------------------------------*/
 body {
   min-height: 100vh;
+  min-width: 100vw;
   background-color: var(--main-dk-color);
 }
 
 /*------------------------------Section------------------------------*/
 section {
-  margin: auto;
   width: 100%;
   height: 90vh;
   padding: 0;
   text-align: center;
   background-color: var(--main-wh-color);
 }
-/*------------------------------Menu de Navegação------------------------------*/
+/*------------------------------Menu do Topo------------------------------*/
 .top-banner {
   background-color: var(--main-color);
   display: flex;
@@ -63,7 +63,7 @@ section {
 }
 .social-banner {
   display: inline-flex;
-  margin-left: -6rem;
+  margin-left: -5rem;
 }
 
 .social-banner a:hover,
@@ -126,16 +126,37 @@ i {
   width: 0.1rem;
 }
 
-/*------------------------------Menu de Navegação------------------------------*/
-header {
+/*------------------------------Menu do Meio------------------------------*/
+.top-menu {
   background-color: var(--main-wh-color);
-  left: 0;
   width: 100%;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
-  text-align: justify;
   z-index: 6;
   transition: 0.2s;
+}
+
+.top-menu-r {
+  float: right;
+  margin-right: 5rem;
+}
+
+.top-menu-r a {
+  font-size: 1.2rem;
+  color: var(--main-dk-color);
+  background-color: var(--main-wh-color);
+  font-weight: 500;
+  padding-left: 10rem;
+}
+
+/*------------------------------Fixed Header------------------------------*/
+header {
+  background-color: var(--main-dk-color);
+  left: 0;
+  z-index: 4;
+  transition: 0.2s;
+  margin-left: 1rem;
 }
 
 .logo img {
@@ -209,17 +230,6 @@ header {
   padding-left: 1rem;
 }
 
-/*------------------------------Sticky effect------------------------------*/
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
-}
 /*------------------------------Hero Banner------------------------------*/
 .hero-banner {
   background-image: url(/assets/home/home-bg.jpg);
@@ -646,4 +656,24 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+/*---------------------------------------Media Queries--------------------------------------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  ...;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  ...;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  ...;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  ...;
 }
